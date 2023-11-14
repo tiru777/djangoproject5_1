@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<table>
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>DOB</th>
+    <th>Age</th>
+    <th>Photo</th>
+  </tr>
+  </thead>
+  <tbody>
+    {% for i in data %}
+      <tr>
+        {% if i.first_name %}
+          <td>{{i.first_name | upper}}</td>
+          <td>{{i.second_name}}</td>
+          <td>{{i.email | lower}} </td>
+          <td>{{i.address | upper}}</td>
+          <td>{{i.dob | date}}</td>
+          <td>{{i.age}}</td>
+          <td>{{i.photo}}</td>
+        {% else %}
+          <td>"data not there please"</td>
+        {% endif%}
+  </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock %}
+
