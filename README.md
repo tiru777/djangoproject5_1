@@ -40,3 +40,6 @@ vitual machine creation
  - come to the project directory
 """
 ```
+```commandline
+pip freeze > requirements.txt
+```
