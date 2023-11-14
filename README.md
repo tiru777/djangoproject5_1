@@ -29,3 +29,14 @@
         {{object.field_name |upper | lower | length | add "value" | date }} check documanetation
     
 ```
+
+```commandline
+"""
+vitual machine creation
+------------------------
+ - virtualenv name_venv
+    - cd name_venv/Script
+    - activate
+ - come to the project directory
+"""
+```
